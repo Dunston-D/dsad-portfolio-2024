@@ -1,1 +1,91 @@
-/*# sourceMappingURL=style.css.map */
+#grid {
+  height: 40em;
+  transition: 500ms;
+  display: grid;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1440px) {
+  #grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .left :hover, .center:hover, .right:hover, .last:hover {
+    grid-template-columns: none;
+  }
+}
+/* Item Styles */
+.left, .center, .right, .last {
+  min-width: 307px;
+  border-radius: 1em;
+  padding: 2em;
+  background: #202020;
+  transition: 1s;
+}
+
+/* Hover Effect */
+.left :hover, .center:hover, .right:hover, .last:hover {
+  background-blend-mode: hue;
+}
+
+#grid:has(.left:hover) {
+  grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+}
+
+#grid:has(.center:hover) {
+  grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
+}
+
+#grid:has(.right:hover) {
+  grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr;
+}
+
+#grid:has(.last:hover) {
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 1fr;
+}
+
+.left {
+  background-image: url(../../../Assets/Pictures/Blue\ Chair\ -\ 1080x1350.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: hue;
+  background-color: #0E7BBF;
+}
+
+.guard {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  color: #FFFFFF;
+  min-height: 100%;
+}
+.guard__t2 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.175rem;
+  text-transform: uppercase;
+}
+.guard__t3 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: -0.175rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+.guard__p1 {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin-bottom: 1.5em;
+}
+.guard__link {
+  margin-top: auto;
+  display: inline-block;
+}
+.guard__link > h2 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: -0.05rem;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
