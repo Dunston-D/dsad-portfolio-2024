@@ -1,0 +1,30 @@
+/* CSS Boiler Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+  }
+  
+  body {
+    background-color: #FFF0DF;
+    color: #202020;
+  }
+  
+  .site {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  
+  img {
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  /* CSS Boiler End */
